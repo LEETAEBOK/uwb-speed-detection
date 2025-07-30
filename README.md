@@ -60,34 +60,7 @@ Where:
 
 ## ✅ Advantages
 
-| Factor                  | Traditional Cameras       | UWB System                 |
-|-------------------------|---------------------------|----------------------------|
-| Installation Cost       | High                      | Low                        |
-| Environmental Sensitivity | High                    | Low                        |
-| Accuracy                | Moderate                  | High (with Kalman Filter) |
-| Privacy                 | Low (image-based)         | High (no camera needed)    |
-
----
-
-## 🌍 Potential Impact
-
-- Alternative to expensive and privacy-invasive ANPR systems
-- Expandable to accident prediction and vulnerable road user safety
-- Applicable in tunnels, underground parking, and urban environments
-
----
-
-## 🧪 Future Work
-
-- Multi-anchor expansion with 2D Kalman Filter
-- Vehicle path prediction
-- Real-time embedded system deployment
-
----
-
-## 👥 Authors
-
-- **BUMBOK**: 김세범, 이태복  
+| Factor  범 
 - **Advisor**: Prof. 장병준  
 - **Affiliation**: Kookmin University – Dept. of Electronic Engineering
 
