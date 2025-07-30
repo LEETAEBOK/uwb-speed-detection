@@ -14,16 +14,19 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ## 🌐 2. Environment & Setup
 
+<img src="images/UWB.png" alt="UWB Module" width="250"/>
+  
 - UWB Module: **Decawave DWM1000**
-- Tunnel Length: **5 meters**
-- Tunnel Height: **1 meter**
 
 <img src="images/Tunnel.png" alt="Tunnel Setup" width="400"/>
 
+- Tunnel Length: **5 meters**
+- Tunnel Height: **1 meter**
 - Anchor placement: entrance & exit  
-- Tag placement: front of the vehicle
 
 <img src="images/Car.png" alt="UWB tag on vehicle" width="350"/>
+
+- Tag placement: front of the vehicle
 
 ---
 
@@ -90,11 +93,6 @@ Where:
 
 ---
 
-## 🧩 UWB Hardware
-
-<img src="images/UWB.png" alt="UWB Module" width="250"/>
-
----
 
 ## 🧠 Conclusion & Effects
 
