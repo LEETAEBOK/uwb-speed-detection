@@ -1,10 +1,10 @@
-# 🚘 Development of a UWB DS-TWR-Based Tunnel Vehicle Over-Speed Detection System
+# Development of a UWB DS-TWR-Based Tunnel Vehicle Over-Speed Detection System
 
 > A low-cost, high-accuracy tunnel speed enforcement system using UWB and Kalman Filter.
 
 ---
 
-## 📌 1. Introduction
+## 1. Introduction
 
 Conventional tunnel speed enforcement systems use ANPR cameras, which are expensive and sensitive to environmental changes.
 
@@ -12,7 +12,7 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ---
 
-## 🌐 2. Environment & Setup
+## 2. Environment & Setup
 
 <!-- UWB Module -->
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
@@ -49,15 +49,56 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ---
 
-## 🔁 3. Process Overview
+## 3. Process Overview
 
 <div style="display: flex; align-items: center;">
   <!-- 왼쪽: 프로세스 다이어그램 -->
-  <img src="images/process_overview.png" alt="Process Overview" width="450" style="margin-right: 30px;" />
+  <!-- 순서도: 간단한 흐름 -->
+<div style="font-family: Arial, sans-serif; line-height: 1.6;">
+
+  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
+    TWR Distance Measurement
+  </p>
+
+  ↓
+
+  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
+    Kalman Filter (Noise Filtering)
+  </p>
+
+  ↓
+
+  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
+    Distance Check
+  </p>
+
+  ↙︎&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘︎  
+  <div style="display: flex; gap: 40px;">
+
+    <div>
+      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
+        Vehicle Entry or Exit Detected
+      </p>
+      ↓
+      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
+        Timestamp Recorded
+      </p>
+    </div>
+
+    <div>
+      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
+        No Detection
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
 
   <!-- 오른쪽: 평균 속도 수식과 설명 -->
   <div>
-    <h3>✅ Average Speed Formula</h3>
+    <h3> Average Speed Formula</h3>
     <img src="images/Average_speed.png" alt="Average Speed Formula" width="200" style="margin-bottom: 10px;" />
     <ul>
       <li><b>T1:</b> Entry timestamp</li>
@@ -68,10 +109,10 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ---
 
-## 📐 4. Methods
+## 4. Methods
 
 
-### 🛰️ DS-TWR (Double-Sided Two-Way Ranging)
+### DS-TWR (Double-Sided Two-Way Ranging)
 
 <img src="images/TWR.png" alt="DS-TWR" width="500"/>
 
@@ -80,7 +121,7 @@ DS-TWR uses three message exchanges to calculate **Time of Flight (ToF)** and es
 
 ---
 
-### 🔧 Kalman Filter
+### Kalman Filter
 
 Used to reduce noise from UWB measurements and improve real-time estimation:
 
@@ -96,36 +137,36 @@ Where:
 
 ---
 
-## 📊 5. Results
+## 5. Results
 
-### ✅ Accuracy Table
+### Accuracy Table
 
 | Trial | Real Speed (m/s) | Measured Speed (m/s) | Error Rate | Over-speed |
 |-------|------------------|----------------------|------------|------------|
-| 1     | 1.51             | 1.55                 | 1.65%      | ✅ Yes     |
-| 2     | 1.84             | 1.78                 | 3.26%      | ✅ Yes     |
-| 3     | 1.85             | 1.78                 | 3.78%      | ✅ Yes     |
-| 4     | 1.58             | 1.65                 | 4.43%      | ✅ Yes     |
-| 5     | 0.77             | 0.75                 | 2.67%      | ❌ No      |
-| 6     | 0.66             | 0.68                 | 3.33%      | ❌ No      |
-| 7     | 0.83             | 0.85                 | 2.40%      | ❌ No      |
+| 1     | 1.51             | 1.55                 | 1.65%      | Yes     |
+| 2     | 1.84             | 1.78                 | 3.26%      | Yes     |
+| 3     | 1.85             | 1.78                 | 3.78%      | Yes     |
+| 4     | 1.58             | 1.65                 | 4.43%      | Yes     |
+| 5     | 0.77             | 0.75                 | 2.67%      | No      |
+| 6     | 0.66             | 0.68                 | 3.33%      | No      |
+| 7     | 0.83             | 0.85                 | 2.40%      | No      |
 
-### 📈 Kalman Filter vs Raw Measurements
+### Kalman Filter vs Raw Measurements
 
 <img src="images/speed.png" alt="Speed Graph" width="400"/>
 
 ---
 
 
-## 🧠 Conclusion & Effects
+## Conclusion & Effects
 
-- 📉 **Low-cost** and **privacy-respecting** alternative to ANPR
-- 🛠 **Accurate even in dark / non-visible environments**
-- 🔍 Can be extended to predict routes or detect abnormal driving
+- **Low-cost** and **privacy-respecting** alternative to ANPR
+- **Accurate even in dark / non-visible environments**
+- Can be extended to predict routes or detect abnormal driving
 
 ---
 
-## 👨‍🏫 Project Info
+## Project Info
 
 - **Team**: LEETAEBOK
 - **Advisor**: Prof. Jang Byeong-Jun  
@@ -133,6 +174,6 @@ Where:
 
 ---
 
-## 📎 Keywords
+## Keywords
 
 `UWB` `DS-TWR` `Kalman Filter` `Tunnel` `Over-Speed Detection` `Embedded Systems`
