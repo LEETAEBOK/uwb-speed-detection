@@ -14,39 +14,62 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ## 🌐 2. Environment & Setup
 
-<img src="images/UWB.png" alt="UWB Module" width="250"/>
-  
-- UWB Module: **Decawave DWM1000**
+<!-- UWB Module -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="images/UWB.png" alt="UWB Module" width="250" style="margin-right: 20px;" />
+  <div>
+    <ul>
+      <li><b>UWB Module:</b> Decawave DWM1000</li>
+    </ul>
+  </div>
+</div>
 
-<img src="images/Tunnel.png" alt="Tunnel Setup" width="400"/>
+<!-- Tunnel Setup -->
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="images/Tunnel.png" alt="Tunnel Setup" width="300" style="margin-right: 20px;" />
+  <div>
+    <ul>
+      <li><b>Tunnel Length:</b> 5 meters</li>
+      <li><b>Tunnel Height:</b> 1 meter</li>
+      <li><b>Anchor placement:</b> Entrance & Exit</li>
+    </ul>
+  </div>
+</div>
 
-- Tunnel Length: **5 meters**
-- Tunnel Height: **1 meter**
-- Anchor placement: entrance & exit  
+<!-- Vehicle Tag Position -->
+<div style="display: flex; align-items: center;">
+  <img src="images/Car.png" alt="UWB tag on vehicle" width="320" style="margin-right: 20px;" />
+  <div>
+    <ul>
+      <li><b>Tag placement:</b> Front of the vehicle</li>
+    </ul>
+  </div>
+</div>
 
-<img src="images/Car.png" alt="UWB tag on vehicle" width="350"/>
-
-- Tag placement: front of the vehicle
 
 ---
 
 ## 🔁 3. Process Overview
 
-<img src="images/process_overview.png" alt="Process Overview" width="450"/>
+<div style="display: flex; align-items: center;">
+  <!-- 왼쪽: 프로세스 다이어그램 -->
+  <img src="images/process_overview.png" alt="Process Overview" width="450" style="margin-right: 30px;" />
+
+  <!-- 오른쪽: 평균 속도 수식과 설명 -->
+  <div>
+    <h3>✅ Average Speed Formula</h3>
+    <img src="images/Average_speed.png" alt="Average Speed Formula" width="200" style="margin-bottom: 10px;" />
+    <ul>
+      <li><b>T1:</b> Entry timestamp</li>
+      <li><b>T2:</b> Exit timestamp</li>
+    </ul>
+  </div>
+</div>
 
 ---
 
 ## 📐 4. Methods
 
-### ✅ Average Speed Formula
-
-<img src="images/Average_speed.png" alt="Average Speed Formula" width="200"/>
-
-
-- T1: Entry timestamp  
-- T2: Exit timestamp
-
----
 
 ### 🛰️ DS-TWR (Double-Sided Two-Way Ranging)
 
