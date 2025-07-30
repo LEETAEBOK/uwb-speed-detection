@@ -51,51 +51,7 @@ This project proposes a UWB (Ultra-Wideband)-based system using **DS-TWR (Double
 
 ## 3. Process Overview
 
-<div style="display: flex; align-items: center;">
-  <!-- 왼쪽: 프로세스 다이어그램 -->
-  <!-- 순서도: 간단한 흐름 -->
-<div style="font-family: Arial, sans-serif; line-height: 1.6;">
-
-  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
-    TWR Distance Measurement
-  </p>
-
-  ↓
-
-  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
-    Kalman Filter (Noise Filtering)
-  </p>
-
-  ↓
-
-  <p style="border: 1px solid #aaa; padding: 8px; width: 300px; text-align: center;">
-    Distance Check
-  </p>
-
-  ↙︎&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↘︎  
-  <div style="display: flex; gap: 40px;">
-
-    <div>
-      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
-        Vehicle Entry or Exit Detected
-      </p>
-      ↓
-      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
-        Timestamp Recorded
-      </p>
-    </div>
-
-    <div>
-      <p style="border: 1px solid #aaa; padding: 8px; width: 200px; text-align: center;">
-        No Detection
-      </p>
-    </div>
-
-  </div>
-
-</div>
-
-
+<img src="images/process_overview.png" alt="Process Overview" width="450" style="margin-right: 30px;" />
   <!-- 오른쪽: 평균 속도 수식과 설명 -->
   <div>
     <h3> Average Speed Formula</h3>
