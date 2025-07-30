@@ -60,7 +60,13 @@ Where:
 
 ## ✅ Advantages
 
-| Factor  범 
+| Factor                  | Traditional Camera System | UWB-Based System           |
+|-------------------------|---------------------------|----------------------------|
+| Installation Cost       | High                      | Low                        |
+| Environmental Sensitivity | High                    | Low                        |
+| Accuracy                | Moderate                  | High (with Kalman Filter) |
+| Privacy                 | Low (image-based)         | High (no image capture)    |
+
 - **Advisor**: Prof. 장병준  
 - **Affiliation**: Kookmin University – Dept. of Electronic Engineering
 
